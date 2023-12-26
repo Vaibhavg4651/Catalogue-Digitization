@@ -1,5 +1,7 @@
 import './App.css';
 import SpeechRecognition, { useSpeechRecognition } from 'react-speech-recognition';
+import { AppContext } from './context-api/context-api';
+import Home from "./pages/Home";
 const App = () => {
   const startListening = () => SpeechRecognition.startListening({ continuous: true, language: 'en-IN' });
   const { transcript, browserSupportsSpeechRecognition } = useSpeechRecognition();
@@ -7,7 +9,8 @@ const App = () => {
       return null
   }
   return (
-      <>
+      <AppContext>
+        <Home/>    
           <div className="container">
               <h2>Speech to Text Converter</h2>
               <br/>
@@ -21,7 +24,7 @@ const App = () => {
                   <button onClick={SpeechRecognition.stopListening}>Stop Listening</button>
               </div>
           </div>
-      </>
+          </AppContext>
   );
 };
 
