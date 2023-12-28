@@ -1,7 +1,7 @@
 import './App.css';
 import SpeechRecognition, { useSpeechRecognition } from 'react-speech-recognition';
 import { AppContext } from './context-api/context-api';
-import Home from "./pages/Home";
+//import Home from "./pages/Home";
 import { useState } from 'react';
 const App = () => {
     const [form, setForm] = useState({
