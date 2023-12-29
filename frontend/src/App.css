@@ -7,7 +7,20 @@
   box-sizing: border-box;
   font-family: "Work Sans", sans-serif;
 }
-
+.navbar{
+  height: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.selectnav{
+  height: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  word-spacing: 100px;
+}
+/*
 html {
   color: rgb(96 101 123);
 }
@@ -73,7 +86,6 @@ p,
 }
 
 button {
-  /* position: absolute; */
   background: rgb(17 166 131);
   color: rgb(255 255 255);
   border-radius: 6px;
@@ -117,7 +129,6 @@ button:hover {
   }
 
   .main-content {
-    /*border:1px solid*/
     font-size: 16px;
     word-spacing: normal;
   }
@@ -135,4 +146,4 @@ button:hover {
   .counter-container p:first-child {
     margin-bottom: 0;
   }
-}
+}*/

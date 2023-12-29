@@ -1,7 +1,24 @@
 import './App.css';
+import Showpage from './shared/components/Showpage';
+import { BrowserRouter } from 'react-router-dom';
+function App() {
+  return (
+    <>
+    <BrowserRouter>
+        <Showpage/>
+    </BrowserRouter>
+    </>
+  );
+}
+
+export default App;
+
+
+
+/*import './App.css';
 import SpeechRecognition, { useSpeechRecognition } from 'react-speech-recognition';
 import { AppContext } from './context-api/context-api';
-//import Home from "./pages/Home";
+import Home from "./pages/Home";
 import { useState } from 'react';
 const App = () => {
     const [form, setForm] = useState({
@@ -141,9 +158,9 @@ const App = () => {
             <input type="text" id="101" />
             <input type="text" id="101" />
             <input type="text" id="101" />
-        </div> */}
-        {/* Maine img to text can vala comment kardiya haid ekhlio kaha add karna hai aur  input boxes transparent hai saare  */}
-        {/* <Home/>     */}
+        </div> 
+        {/* Maine img to text can vala comment kardiya haid ekhlio kaha add karna hai aur  input boxes transparent hai saare  
+        <Home/>
           <div className="container">
               <h2>Speech to Text Converter</h2>
               <br/>
@@ -162,3 +179,4 @@ const App = () => {
 };
 
 export default App;
+*/
